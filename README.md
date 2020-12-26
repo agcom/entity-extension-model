@@ -1,198 +1,175 @@
-# A [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model)
+# Simple entity-relationship [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model)
 
-It's all about **documentations**; How to express data models independent from their implementation.
+A human readable semantic data model, a simplified version of [entity-relationship](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model).
 
-In other words, this document offers a very **simple**, high-order **abstraction** to define data models.
+The whole point of this semantic data model is to **separate entities from relationships**. Thus, maximizing definitions re-usage and making it easy to manipulate the whole data models system.
 
-## Entity
+## [Entity](https://www.lexico.com/definition/entity)
 
-The word ["entity"](https://www.lexico.com/definition/entity) describes itself very well in dictionaries and here its just the same.
+A model is called an **entity**. For example,
 
-We call a **data model**, an entity. Real world data, lies into **instances** of entities.
+```
+Person entity.
+Car entity.
+```
+
+A filled entity, is an **instance** of that entity. For example,
+
+```
+Alireza Ghasemi is an instance of Person entity.
+Tesla Model S is an instance of Car entity.
+```
+
+Entities are described only and only by **a name** and **a set of extensions**. If an entity's extensions' set is empty, then it's considered as a **primitive entity**.
 
 > If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), entity is class's cousin, and entity instances are similar to objects.
 
-**An entity should be primitive or consist of one or more entities**. That's the key definition for entity.
+## Extension
 
-The above line is obviously a recursive definition which, if observed intellectually, defines two **base cases**:
+As clear as its name suggests; Something that **extends instances of an entity** is called an extension. Or briefly said, something that extends an entity.
 
-- Primitive entity
-- Consist of one or more of itself
+The **extend operation** is something that the extension specifies or becomes clear in implementation details.
 
-So, the two following described entities are valid,
+Example,
 
-> - The `Entity : <Entity...>` notation defines the entity on the left side of `:` consists of the entities on the right side of `:`.
->
-> 	We can read `:` as 'uses' or 'consists of' or 'extended by' or 'contains.'
->
-> - The `# <String>` notation is a comment and has no effect in definitions.
+```
+String primitive entity.
 
-```yaml
-Array # Primitive entity
+Name extension:
+	Maps the extended instance to a String instance.
+	The String instance can be referenced by 'name' key or whatever way the extended entity defines.
+	BTW the String instance should be at least 4 characters.
+
+Person entity:
+	Uses Name extension.
 ```
 
-```yaml
-Character array : Array
+## Usage
+
+Relieving the extend operation is what makes this semantic data model simple.
+
+The semantic data model doesn't specifies any notation. You can define the extensions and entities in any way you want.
+
+For example, we can describe `Person` entity like this,
+
+```
+Rule #1: Every entity is an implicit extension which maps the extended entity instance to an instance of itself.
+Rule #2: '<Entity> : <Extensions>' defines a new entity. Its name is <Entity> and <Extensions> is its set of extensions.
+Rule #3: Everything else other than the entity definition lies inside its implicit extension; In that case, the entity is extended by its implicit extension.
+Rule #4: Common collection types can be used freely.
+Rule #5: Common-sense words are accepted.
+
+---
+
+String is a primitive entity.
+Name : String. Should be at least 4 characters.
+SSN : String. Must be 9 digits.
+Image : String. Should be a valid image file name in our images directory.
+Gender is an entity with only three instances, male, female and other.
+Father : Person.
+Mother : Person.
+Parent : Father, Mother.
+Children : A set of persons.
+
+Person : Name, SSN, Image, Gender, Parent, Children.
 ```
 
-```yaml
-String : Character array
+Or do it the hard way,
+
+```
+0 primitive entity.
+1 primitive entity.
+
+Bit extension:
+	Maps the extended entity instance to 0 or 1 entity instance.
+	The extended instance specifies which entity to use; 0 or 1.
+Bit entity:
+	Extended by Bit extension.
+
+Integer extension:
+	Maps the extended entity instance to 32 instances of Bit entity.
+	The order of bits matter and they're referenced that way; First bit, Second bit, Third bit, ..., 32nd bit.
+Integer entity:
+	Extended by Integer extension.
+
+Character extension:
+	Maps the extended entity instance to an instance of Integer entity.
+Character entity:
+	Extended by Character extension.
+
+Array extension:
+	Maps the extended entity instance to n sequential instances of any entity.
+	The instances are referenced by their ordinal integer in range [0, n).
+	n should be non-negative.
+Array entity:
+	Extended by Array extension.
+
+CharArray extension:
+	Maps the extended entity instance to an instance of Array which only maps to instances of Character entity.
+
+CharArray entity:
+	Extended by CharArray.
+
+String extension:
+	Maps the extended entity instance to an instance of CharArray entity.
+
+String entity:
+	Extended by String.
+
+Name extension:
+	Maps the extended entity instance to an instance of String entity.
+	The String.CharArray.Array.n should be at least 4.
+
+Name entity:
+	Extended by Name.
+
+SSN extension:
+	Maps the extended entity instance to an instance of String entity.
+	The String.CharArray.Array.n must be 9 digits.
+
+SSN entity:
+	Extended by SSN.
+
+Image extension:
+	Maps the extended entity instance to a String instance.
+	The String should be equal to a valid image file name in our images directory.
+
+Image entity:
+	Extended by Image extension.
+
+Gender extension:
+	Maps the extended entity instance to an instance of Integer.
+	The Integer instance can only be only 0, 1 or 2. 0 for male, 1 for female and 2 for other genders.
+
+Gender entity:
+	Extended by Gender extension.
+
+Person extension:
+	Maps the extended entity instance to a Person entity instance.
+
+Mother extension:
+	Maps the extended entity instance to a Person entity instance.
+
+Mother entity:
+	Extended by Mother.
+
+Father extension;
+	Maps the extended entity instance to a Person entity instance.
+
+Father entity:
+	Extended by Father.
+
+Parent extension:
+	Maps the extended entity instance to a Father entity instance and a Mother entity instance.
+
+Parent entity:
+	Extended by Parent extension.
+
+Children extension:
+	Maps the extended entity instance to a set of Person entity instances.
+
+Person entity:
+	Extended by Name, SSN, Image, Gender, Parent and Children.
 ```
 
-```yaml
-Person : String, Person, Person # Self extended (A person has a mom and a dad)
-```
-
-Two questions arises:
-
-- What happens to the `Person` instances? Infinite persons?
-- Are primitive entities defined in this semantic data model?
-
-### Entity graph
-
-To answer the first question, let's draw these entities in a directed graph,
-
-> Entities are nodes and there is an edge from node `A` to `B` if `A` consists of `B`.
-
-```mermaid
-graph LR
-	array[Array]
-	char-array[Character array]
-	person[Person]
-	string[String]
-	
-    char-array --> array
-	string --> char-array
-	person --> person & person & string
-```
-
-As observed, there are two cycles in the graph. We call them entity cycles.
-
-#### Entity cycles
-
-Three scenarios can happen to those cycles in instances of `Person`:
-
-##### Self link.
-
-```mermaid
-graph LR
-	ali[Ali]
-	bahram[Bahram]
-	sara[Sara]
-	yalda[Yalda]
-	ahmad[Ahmad]
-	yasaman[Yasaman]
-	
-	ali & sara --> yasaman & bahram
-	yasaman --> yalda & ahmad
-	yalda --> yalda & yalda
-	ahmad --> ahmad & ahmad
-	bahram --> bahram & bahram
-```
-
-Obviously, in this context, this scenario should be avoided; Someone can't be parent of himself/herself.
-
-> These are called validations and reside in the application logic which is not part of this document.
-
-##### Continuous data.
-
-Continuously generate data and feed to instances of `Person` to be used.
-
-##### Terminate by special flag.
-
-```mermaid
-graph LR
-	ali[Ali]
-	bahram[Bahram]
-	sara[Sara]
-	yalda[Yalda]
-	ahmad[Ahmad]
-	yasaman[Yasaman]
-	unknown[Unknown]
-	
-	ali & sara --> yasaman & bahram
-	yasaman --> yalda & ahmad
-	yalda --> unknown & unknown
-	ahmad --> unknown & unknown
-	bahram --> unknown & unknown
-```
-
-The special flag can be an error or a special value like `Unknown` which is not an instance of `Person`.
-
-To keep it simple, we can't define this scenario in our semantic data model. It'll be part of implementation details.
-
-> In most programming languages, database and data serialization formats, there is always a special flag  present.
->
-> In Java, JSON and MySQL we have `null` as the special flag.
->
-> If it has to be part of this semantic data model, it'll look like this,
->
-> ```yaml
-> Unknown # Primitive entity
-> Person : (Person or Unknown) and (Person or Unknown)
-> ```
-
-The `Unknown` can be an instance of person if we combine this scenario with the self link scenario.
-
-```mermaid
-graph LR
-	ali[Ali]
-	bahram[Bahram]
-	sara[Sara]
-	yalda[Yalda]
-	ahmad[Ahmad]
-	yasaman[Yasaman]
-	unknown[Unknown]
-	
-	ali & sara --> yasaman & bahram
-	yasaman --> yalda & ahmad
-	yalda --> unknown & unknown
-	ahmad --> unknown & unknown
-	bahram --> unknown & unknown
-	unknown --> unknown & unknown
-```
-
-### Primitive entities
-
-No primitive entity is defined in this semantic data model.
-
-It's encouraged to define primitive entities when using this semantic data model.
-
-OR, you can assume that some primitive entities are defined out of the box. For example,
-
-- String
-- Set
-- List
-- Integer
-- Double
-- ...
-
-### Generic entities
-
-There is no such thing defined in this semantic data model. Everything is concrete therefore should be defined. For example,
-
-```yaml
-Array # Primitive
-Character # Primitive
-
-Array of characters : Array, Character
-
-String: Array of characters
-```
-
-BUT, you can define your own notation for generics. For example,
-
-```yaml
-Array # Primitive
-Character # Primitive
-
-# 4 examples
-String: Array of characters
-String: Character array
-String: Array(Character)
-String: Array<Character>
-```
-
-### Rule of extending
-
-...
+So, to wrap up, if it **makes sense** then it's valid.
