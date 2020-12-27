@@ -1,28 +1,28 @@
-# Simple entity-relationship [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model)
+# Entity-extension model
 
-A human readable semantic data model, a simplified version of [entity-relationship](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model).
+A [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model) alternative to [entity-relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model), but, much more **easy** to talk about.
 
-The whole point of this semantic data model is to **separate entities from relationships**. Thus, maximizing definitions re-usage and making it easy to manipulate the whole data models system.
+**Entities and their manipulations** are completely distinguished. Thus, maximizing their re-usability.
 
 ## [Entity](https://www.lexico.com/definition/entity)
 
-A model is called an **entity**. For example,
+A data model is called an **entity**. For example,
 
-```
-Person entity.
-Car entity.
-```
+- Person
+- Car
 
-A filled entity, is an **instance** of that entity. For example,
+An entity is described by only a **name** and can have zero or more unique **extensions** (we'll talk about it later).
 
-```
-Alireza Ghasemi is an instance of Person entity.
-Tesla Model S is an instance of Car entity.
-```
+### Instance
 
-Entities are described only and only by **a name** and **a set of extensions**. If an entity's extensions' set is empty, then it's considered as a **primitive entity**.
+An entity when full-filled with **data**, is called an instance of that entity.
 
-> If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), entity is class's cousin, and entity instances are similar to objects.
+- Alireza Ghasemi is an instance of Person entity.
+- Tesla Model S is an instance of Car entity.
+
+Every entity can have multiple instances.
+
+> If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 'entity' is similar to 'class' and 'instance' to 'object'.
 
 ## Extension
 
