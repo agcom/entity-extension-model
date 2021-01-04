@@ -2,25 +2,30 @@
 
 A [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model) similar to [entity-relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model), but, much more **easy** to talk about.
 
-## [Entity](https://www.lexico.com/definition/entity)
+## Entity
 
-A data model is called an **entity**. For example,
+Just checkout word 'entity' in a dictionary for best explanation.
 
-- Person
-- Car
+- [Wiktionary | entity](https://en.wiktionary.org/wiki/entity)
+- [Lexico | entity](https://www.lexico.com/definition/entity)
 
-An entity can have zero or more unique **mappings** (we'll talk about it later). An entity without any mapping is an empty entity.
+Examples,
+
+- Person entity
+- Car entity
+
+An entity may admit to some mappings. An entity which admits to no mappings, is an **empty entity**.
 
 ### Instance
 
-An entity when full-filled with **data**, is called an instance of that entity.
+A specific example of an entity, is called an **instance**.
 
 - Alireza Ghasemi is an instance of Person entity.
 - Tesla Model S is an instance of Car entity.
 
-Every entity can have multiple instances.
+Every entity may have multiple instances.
 
-> If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 'entity' is similar to 'class' and 'instance' to 'object'.
+> If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 'entity' is similar to 'class' and 'instance' is similar to 'object'.
 
 ## Mapping
 
