@@ -55,32 +55,31 @@ Without any primitive mapping, the model falls into an infinite loop.
 
 ## Examples
 
-This semantic data model is so simple that it doesn't need a notation. However, you may define your own rules or notation to even simplify it more.
+The above definitions were just the **fundamentals**. You can define your own definitions on top of the fundamentals.
 
-We'll to create data model of a person. For every person, we want to save his/her name, image, parents and children.
+Below, we'll create data model of a person and we'll try to be creative by defining our own rules.
 
 ---
 
-Primitive mappings (expected to be already defined in implementation),
+For every person, we want to save his/her name, image, parents and children.
 
-- String: Maps every instance of the extended entity to a string.
-- Integer: Maps every instance of the extended entity to an integer.
-- ...
+Rules,
 
-With these primitive mappings present, clearly, we would only have one entity, which is the person entity.
+- Mappings and entities are referenced by a name.
+- Common data types are available out of the box as primitive mappings. A string, an integer, ....
+- A super mapping is a mapping which applies a set of other mappings.
+- Notation of defining a mapping: `<name> -> <A or Some> <associated entity><s>`.
+- Notation of defining a super mapping: `<name> ->: <applied mappings separated by comma(s)> `.
+- Notation of defining an entity: `<name> : <admitted mappings separated by comma(s)>`.
 
-Mappings,
+So,
 
-- Name mapping: Uses string mapping.
-- SSN mapping: Uses string mapping.
-- Image mapping: Uses string mapping (URI of the string).
-- Person mapping: Maps every instance of the extended entity to an instance of person entity.
-- Mother mapping: Uses person mapping.
-- Father mapping: Uses person mapping.
-- Parents mapping: Uses father and mother mapping.
-- Persons mapping: Maps every instance of the extended entity to zero of more instances of person entity.
-- Children mapping: Uses persons mapping.
-
-Entity,
-
-- Person entity: Extended by name, gender, SSN, image, parents and children mappings.
+- Name -> A string
+- Image -> A string (URI of the image)
+- Person -> A person
+- Mother ->: Person
+- Father ->: Person
+- Parents ->: Father, Mother
+- Persons -> Some Persons
+- Children ->: Persons
+- Person : Name, Image, Parents, Children
