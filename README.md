@@ -23,33 +23,35 @@ A specific example of an entity, is called an **instance**.
 - Alireza Ghasemi is an instance of Person entity.
 - Tesla Model S is an instance of Car entity.
 
-Every entity may have multiple instances.
+An entity may have multiple instances.
 
 > If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 'entity' is similar to 'class' and 'instance' is similar to 'object'.
 
 ## Mapping
 
-As clear as its name suggests; Something that **manipulates** instances of an entity.
+In mathematics, mapping is an operation that associates each element of a given set (domain) with one or more elements of a second set (range).
 
-For example, when we're adding a name attribute to the person entity, we're manipulating every instance of person. The name attribute is an mapping that we just assigned to the person entity. We can also reuse it on other entities if the mapping allows.
+- [Wikitionary | mapping](https://en.wiktionary.org/wiki/mapping)
+- [Lexico | mapping](https://www.lexico.com/definition/mapping)
 
-The **manipulating operation** is something that the mapping itself or the implementation specifies.
+When an entity admits to a mapping, the mapping associates each instance of the entity with a set of instances of an(other) entity.
 
-There are no limits to mappings (except that they're not entities),
+- Domain: Instances of the entity
+- Range: A set of instances of an(other) entity
 
-- Mappings can use other mappings.
-	- An mapping can apply a group of other mappings.
-- Mappings can use entities.
+In other words, a mapping **associates** each instance of the admitted entity with a set of instances of an(other) entity.
 
-### Primitive mappings
+For example, every person may have some child. We should define a children mapping which maps each instance of the person entity with a set of instances of the person entity.
 
-A primitive mapping is something that the **implementation should handle**.
+To make implementation of entity-mapping model practical, it needs base cases, which we'll call **primitive mappings**.
 
-In other words, we may define some primitive mappings and expect them to be already defined in implementation.
+### Primitive mapping
 
-For example, we can define string, integer and double as primitive mappings.
+We expect primitive mappings to be **handled by implementation**.
 
-All other mappings are based on primitive mappings.
+For example, we can define a string mapping as a primitive mapping (a simple case).
+
+Without any primitive mapping, the model falls into an infinite loop.
 
 ## Examples
 
