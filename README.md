@@ -1,79 +1,85 @@
-# Entity-extension model
+# Entity-mapping model
 
-A [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model) alternative to [entity-relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model), but, much more **easy** to talk about.
+A [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model) similar to [entity-relationship model](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model), but, much more **easy** to talk about.
 
-## [Entity](https://www.lexico.com/definition/entity)
+## Entity
 
-A data model is called an **entity**. For example,
+Just checkout word 'entity' in a dictionary for best explanation.
 
-- Person
-- Car
+- [Wiktionary | entity](https://en.wiktionary.org/wiki/entity)
+- [Lexico | entity](https://www.lexico.com/definition/entity)
 
-An entity can have zero or more unique **extensions** (we'll talk about it later). An entity without extensions is an empty entity.
+Examples,
+
+- Person entity
+- Car entity
+
+An entity may admit to some mappings. An entity which admits to no mappings, is an **empty entity**.
 
 ### Instance
 
-An entity when full-filled with **data**, is called an instance of that entity.
+A specific example of an entity, is called an **instance**.
 
 - Alireza Ghasemi is an instance of Person entity.
 - Tesla Model S is an instance of Car entity.
 
-Every entity can have multiple instances.
+An entity may have multiple instances.
 
-> If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 'entity' is similar to 'class' and 'instance' to 'object'.
+> If you're familiar with [object-oriented programming](https://en.wikipedia.org/wiki/Object-oriented_programming), 'entity' is similar to 'class' and 'instance' is similar to 'object'.
 
-## Extension
+## Mapping
 
-As clear as its name suggests; Something that **manipulates** instances of an entity.
+In mathematics, mapping is an operation that associates each element of a given set (domain) with one or more elements of a second set (range).
 
-For example, when we're adding a name attribute to the person entity, we're manipulating every instance of person. The name attribute is an extension that we just assigned to the person entity. We can also reuse it on other entities if the extension allows.
+- [Wikitionary | mapping](https://en.wiktionary.org/wiki/mapping)
+- [Lexico | mapping](https://www.lexico.com/definition/mapping)
 
-The **manipulating operation** is something that the extension itself or the implementation specifies.
+When an entity admits to a mapping, the mapping associates each instance of the entity with a set of instances of an(other) entity.
 
-There are no limits to extensions (except that they're not entities),
+- Domain: Instances of the entity
+- Range: A set of instances of an(other) entity
 
-- Extensions can use other extensions.
-	- An extension can apply a group of other extensions.
-- Extensions can use entities.
+In other words, a mapping **associates** each instance of the admitted entity with a set of instances of an(other) entity.
 
-### Primitive extensions
+For example, every person may have some child. We should define a children mapping which maps each instance of the person entity with a set of instances of the person entity.
 
-A primitive extension is something that the **implementation should handle**.
+To make implementation of entity-mapping model practical, it needs base cases, which we'll call **primitive mappings**.
 
-In other words, we may define some primitive extensions and expect them to be already defined in implementation.
+### Primitive mapping
 
-For example, we can define string, integer and double as primitive extensions.
+We expect primitive mappings to be **handled by implementation**.
 
-All other extensions are based on primitive extensions.
+For example, we can define a string mapping as a primitive mapping (a simple case).
 
-## Examples
+Without any primitive mapping, the model falls into an infinite loop.
 
-This semantic data model is so simple that it doesn't need a notation. However, you may define your own rules or notation to even simplify it more.
+## Example
 
-We'll to create data model of a person. For every person, we want to save his/her name, image, parents and children.
+The above definitions were just the **fundamentals**. You can define your own definitions on top of the fundamentals.
+
+Below, we'll create data model of a person and we'll try to be creative by defining our own rules.
 
 ---
 
-Primitive extensions (expected to be already defined in implementation),
+For every person, we want to save his/her name, image, parents and children.
 
-- String: Maps every instance of the extended entity to a string.
-- Integer: Maps every instance of the extended entity to an integer.
-- ...
+Rules,
 
-With these primitive extensions present, clearly, we would only have one entity, which is the person entity.
+- Mappings and entities are referenced by a name.
+- Common data types are available out of the box as primitive mappings. A string, an integer, ....
+- A super mapping is a mapping which applies a set of other mappings.
+- Notation of defining a mapping: `<name> -> <A or Some> <associated entity><s>`.
+- Notation of defining a super mapping: `<name> ->: <applied mappings separated by comma(s)> `.
+- Notation of defining an entity: `<name> : <admitted mappings separated by comma(s)>`.
 
-Extensions,
+So,
 
-- Name extension: Uses string extension.
-- SSN extension: Uses string extension.
-- Image extension: Uses string extension (URI of the string).
-- Person extension: Maps every instance of the extended entity to an instance of person entity.
-- Mother extension: Uses person extension.
-- Father extension: Uses person extension.
-- Parents extension: Uses father and mother extension.
-- Persons extension: Maps every instance of the extended entity to zero of more instances of person entity.
-- Children extension: Uses persons extension.
-
-Entity,
-
-- Person entity: Extended by name, gender, SSN, image, parents and children extensions.
+- Name -> A string
+- Image -> A string (URI of the image)
+- Person -> A person
+- Mother ->: Person
+- Father ->: Person
+- Parents ->: Father, Mother
+- Persons -> Some Persons
+- Children ->: Persons
+- Person : Name, Image, Parents, Children
