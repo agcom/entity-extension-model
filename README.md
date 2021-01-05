@@ -53,7 +53,7 @@ For example, we can define a string mapping as a primitive mapping (a simple cas
 
 Without any primitive mapping, the model falls into an infinite loop.
 
-## Examples
+## Example
 
 The above definitions were just the **fundamentals**. You can define your own definitions on top of the fundamentals.
 
