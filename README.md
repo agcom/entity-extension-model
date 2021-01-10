@@ -52,7 +52,7 @@ Below, we'll create data model of a person and we'll try to be creative by speci
 
 
 
-For every person, we want to save his/her name, image, parents and children.
+For every person, we want to save his/her name, parents and children.
 
 Conventions,
 
@@ -60,18 +60,20 @@ Conventions,
 - A primitive entity is an entity which we expect to be already defined in implementation.
 - Common data types are available out of the box as primitive entities. String, Integer, ....
 - A super mapping is a mapping which applies a set of other mappings.
-- Notation of defining a mapping: `<Name> -> <A/Some> <Associated entity>`.
-- Notation of defining a super mapping: `<Name> :> <Applied mapping(s) separated by comma(s)> `.
-- Notation of defining an entity: `<Name> : <Admitted mapping(s) separated by comma(s)>`.
+- Notation of defining a mapping: `<Name> -> <Associated entity>`.
+- Notation of defining a super mapping: `<Name> :> <Applied mapping(s)> `.
+- Notation of defining an entity: `<Name> : <Admitted mapping(s)>`.
 
 So,
 
-- Name -> A String
-- Image -> A String (URI of the image)
-- Person -> A Person
-- Mother :> Person
-- Father :> Person
-- Parents :> Father, Mother
-- Persons -> Some Persons
-- Children :> Persons
-- Person : Name, Image, Parents, Children
+```
+Name -> String
+Person -> Person
+
+Mother :> Person
+Father :> Person
+Parents :> Father, Mother
+Children :> Person
+
+Person : Name, Parents, Children
+```
