@@ -14,6 +14,7 @@ To learn from scratch, read the following documents in order,
 - Fundamentals,
 	- [Entity](entity.md)
 	- [Mapping](mapping.md)
+- [Extensions](extensions/README.md)
 - Examples
   - [A simple example](examples/simple.md)
 
