@@ -5,3 +5,4 @@ On top of EM model. Extensions should be compatible with the fundamentals. In ot
 
 
 - [Name string](name-string.md)
+- [Notation](notation.md)
