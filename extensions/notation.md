@@ -6,9 +6,9 @@ It's all just about defining entities and mappings.
 
 > A `<...>` block indicates a replacement/input, and the note inside, describes the replacement type.
 >
-> A set replacement should be done by separating set members using commas. For example,
+> A set replacement should be done by writing set members separated using commas. For example,
 >
-> - `<set of entities>`, replaced by `Name, Mother, Father, Children`.
+> - `<set of mappings>`, replaced by `Name, Mother, Father, Children`.
 
 ### Entity
 
@@ -17,6 +17,11 @@ It's all just about defining entities and mappings.
 - `<entity>`: Entity reference.
 
 - `<set of mappings>`: Admitted mappings.
+
+> In case of an empty set of mappings, both following notations are considered correct.
+>
+> - `<entity>`
+> - `<entity> :`
 
 ### Mapping
 
@@ -29,3 +34,6 @@ It's all just about defining entities and mappings.
 ## Examples
 
 Almost all examples in the repository use this extension. See list of examples in the [root readme](../README.md).
+
+
+
