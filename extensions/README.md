@@ -6,3 +6,4 @@ On top of EM model. Extensions should be compatible with the fundamentals. In ot
 
 - [Reference name](reference-name.md)
 - [Notation](notation.md)
+- [Super mapping](super-mapping.md)
