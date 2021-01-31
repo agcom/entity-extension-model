@@ -1,6 +1,6 @@
 # Notation
 
-A **suggested** notation for EM model.
+A **suggested** notation for EM.
 
 It's all just about defining entities and mappings.
 
