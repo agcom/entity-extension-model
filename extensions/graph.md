@@ -18,23 +18,10 @@ A -> Y
 Y
 ```
 
-```mermaid
-graph LR
-	X --A-->
-	Y
-```
+![Mermaid SVG](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcblx0WCAtLUEtLT5cblx0WSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
 ## Example
 
 Graph view of the [simple](../examples/simple.md) example,
 
-```mermaid
-graph LR
-	String
-	Person
-	
-	Person --Name--> String
-	Person --Mother--> Person
-	Person --Father--> Person
-	Person --Children--> Person
-```
+![Mermaid SVG](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcblx0U3RyaW5nXG5cdFBlcnNvblxuXHRcblx0UGVyc29uIC0tTmFtZS0tPiBTdHJpbmdcblx0UGVyc29uIC0tTW90aGVyLS0-IFBlcnNvblxuXHRQZXJzb24gLS1GYXRoZXItLT4gUGVyc29uXG5cdFBlcnNvbiAtLUNoaWxkcmVuLS0-IFBlcnNvbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
