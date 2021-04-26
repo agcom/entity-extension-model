@@ -2,8 +2,8 @@
 
 For the best clarification, open a **dictionary** and checkout the word 'entity'.
 
-- [Wiktionary | entity](https://en.wiktionary.org/wiki/entity)
-- [Lexico | entity](https://www.lexico.com/definition/entity)
+- [Wiktionary \| entity](https://en.wiktionary.org/wiki/entity)
+- [Lexico \| entity](https://www.lexico.com/definition/entity)
 
 A thing apart from its variant properties, is an entity. An entity admits to a set of mappings (potentially an empty set).
 
