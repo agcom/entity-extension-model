@@ -26,35 +26,32 @@ To be used with the [suggested notation](notation.md).
 > Using the [suggested notation](notation.md) extension.
 
 ```
-String
-Person : Name, Parents, Children
+string
+person : name, parents, children
 
-String -> String
-Person -> Person
+string -> string
+person -> person
 
-Name :> String
-Children :> Person
-Father :> Person
-Mother :> Person
-Parents :> Mother, Father
+name :> string
+children :> person
+father :> person
+mother :> person
+parents :> mother, father
 ```
 
 Let's see a **transpiled** version of the above example,
 
 ```
-String
-Person : Name.String, Parents.Mother.Person, Parents.Father.Person, Children.Person
+string
+person : name.string, parents.mother.person, parents.father.person, children.person
 
-String -> String
-Person -> Person
+string -> string
+person -> person
 
-Name.String -> String
-Children.Person -> Person
-Father.Person -> Person
-Mother.Person -> Person
-Parents.Mother.Person -> Person
-Parents.Father.Person -> Person
+name.string -> string
+children.person -> person
+father.person -> person
+mother.person -> person
+parents.mother.person -> person
+parents.father.person -> person
 ```
-
-
-

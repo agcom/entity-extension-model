@@ -12,19 +12,18 @@ To **express** the model, we'll reference each entity/mapping by a name ([refere
 | Mapping | `<name> -> <associated entity>` |
 | Comment |          `# <comment>`          |
 
-
 ## The example
 
 ```
-Person : Name, Mother, Father, Children
+person : name, mother, father, children
 
 # String is a primitive entity (therefore has no mappings).
-String :
+string :
 
-Name -> String
-Mother -> Person
-Father -> Person
-Children -> Person
+name -> string
+mother -> person
+father -> person
+children -> person
 ```
 
 > Checkout the [primitive entity](../extensions/primitive-entity.md) extension.

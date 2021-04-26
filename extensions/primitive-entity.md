@@ -13,34 +13,34 @@ But, **NO**, with this extension. Leaf entities should be handled by **implement
 Lets explain with a [simple example](../examples/simple.md),
 
 ```
-Person : Name
-Name -> String
-String
+person : name
+name -> string
+string
 ```
 
-Each person has a name. But, **what's** Name? It's a mapping to a string instance. Well, **what's** String, is it an empty entity (implying that name maps to an empty thing, thus, person is also an empty entity)? 
+Each person has a name. But, **what's** name? It's a mapping to a string instance. Well, **what's** string, is it an empty entity (implying that name maps to an empty thing, thus, person is also an empty entity)? 
 
 Let's actually define the string entity.
 
 ```
-String : Character
-Character -> Character
-Character
+string : character
+character -> character
+character
 ```
 
-An string instance consists of some characters. **What's** Character?
+An string instance consists of some characters. **What's** character?
 
 ```
-Character : Byte
+character : byte
 
-Byte -> Byte
-Byte : Bit
+byte -> byte
+byte : bit
 
-Bit -> Bit
-Bit
+bit -> bit
+bit
 ```
 
-**What's** Bit? An strict entity which should be handled by implementations.
+**What's** bit? An strict entity which should be handled by implementations.
 
 It would have been easier and more abstract (in a good way) to say that at the string entity.
 
@@ -49,13 +49,13 @@ Imagine it's 2070 and new computers, instead of digital logic, work on top of a 
 But, with the following :point_down: person model,
 
 ```
-Person : Name
-Name -> String
-String
+person : name
+name -> string
+string
 ```
 
 They can implement the string entity in their optimized way :white_check_mark:.
 
 > String is a good enough abstraction. Too much abstraction would suffer implementations.
 
-So, **what's** String here? Not emptiness, but an entity with clear semantics which should be handled by **implementations**.
+So, **what's** string here? Not emptiness, but an entity with clear semantics which should be handled by **implementations**.

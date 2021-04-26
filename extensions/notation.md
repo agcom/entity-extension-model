@@ -8,7 +8,7 @@ It's all just about defining entities and mappings.
 >
 > A set replacement should be done by writing set members separated using commas. For example,
 >
-> - `<set of mappings>`, replaced by `Name, Mother, Father, Children`.
+> - `<set of mappings>`, replaced by `name, mother, father, children`.
 
 ### Entity
 
@@ -34,6 +34,3 @@ It's all just about defining entities and mappings.
 ## Examples
 
 Almost all examples in the repository use this extension. See list of examples in the [root readme](../README.md).
-
-
-
