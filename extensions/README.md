@@ -11,3 +11,4 @@ Extensions should be compatible with the fundamentals.
 - [Super mapping](super-mapping.md)
 - [Primitive entity](primitive-entity.md)
 - [Graph view](graph.md)
+- [Implicit mapping](implicit-mapping.md)
