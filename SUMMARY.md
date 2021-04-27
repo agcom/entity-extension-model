@@ -2,8 +2,8 @@
 
 - [Introduction](README.md)
 - Fundamentals
-  - [Entity](entity.md)
-  - [Mapping](mapping.md)
+  - [Entity](fundamentals/entity.md)
+  - [Mapping](fundamentals/mapping.md)
 - [Extensions](extensions/README.md)
   - [Reference name](extensions/reference-name.md)
   - [Notation](extensions/notation.md)
