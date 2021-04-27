@@ -33,4 +33,4 @@ It's all just about defining entities and mappings.
 
 ## Examples
 
-Almost all examples in the repository use this extension. See list of examples in the [root readme](../README.md).
+Almost all examples in the repository use this extension.
