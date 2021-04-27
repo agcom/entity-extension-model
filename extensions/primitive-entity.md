@@ -12,7 +12,7 @@ But, **NO**, with this extension. Leaf entities should be handled by **implement
 
 Lets explain with a [simple example](../examples/simple.md),
 
-```
+```entity-mapping
 person : name
 name -> string
 string
@@ -22,7 +22,7 @@ Each person has a name. But, **what's** name? It's a mapping to a string instanc
 
 Let's actually define the string entity.
 
-```
+```entity-mapping
 string : character
 character -> character
 character
@@ -30,7 +30,7 @@ character
 
 An string instance consists of some characters. **What's** character?
 
-```
+```entity-mapping
 character : byte
 
 byte -> byte
@@ -48,7 +48,7 @@ Imagine it's 2070 and new computers, instead of digital logic, work on top of a 
 
 But, with the following :point_down: person model,
 
-```
+```entity-mapping
 person : name
 name -> string
 string

@@ -25,7 +25,7 @@ To be used with the [suggested notation](notation.md).
 
 > Using the [suggested notation](notation.md) extension.
 
-```
+```entity-mapping
 string
 person : name, parents, children
 
@@ -41,7 +41,7 @@ parents :> mother, father
 
 Let's see a **transpiled** version of the above example,
 
-```
+```entity-mapping
 string
 person : name.string, parents.mother.person, parents.father.person, children.person
 

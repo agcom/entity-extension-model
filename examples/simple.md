@@ -14,7 +14,7 @@ To **express** the model, we'll reference each entity/mapping by a name ([refere
 
 ## The example
 
-```
+```entity-mapping
 person : name, mother, father, children
 
 # String is a primitive entity (therefore has no mappings).

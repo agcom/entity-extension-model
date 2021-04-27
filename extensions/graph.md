@@ -12,7 +12,7 @@ Visually said,
 
 > Using the [suggested notation](notation.md).
 
-```
+```entity-mapping
 x : m
 m -> y
 y
