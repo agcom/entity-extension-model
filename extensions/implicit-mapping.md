@@ -20,7 +20,7 @@ x -> x # Can be omitted cause it's implicitly applied.
 
 This extension is very handy beside the [super mapping](super-mapping.md) extension.
 
-With this extension, the example in the super mapping document shrinks down to the following :point_down:.
+With this extension, the example in the super mapping document shrinks down to the following 👇.
 
 ```entity-mapping
 string

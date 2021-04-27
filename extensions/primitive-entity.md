@@ -44,9 +44,9 @@ bit
 
 It would have been easier and more abstract (in a good way) to say that at the string entity.
 
-Imagine it's 2070 and new computers, instead of digital logic, work on top of a new logic; Graph logic. Now to implement this person model :point_up:, they should handle the bit entity, thus, mimicking logical computers. The model is bound to logical computers.
+Imagine it's 2070 and new computers, instead of digital logic, work on top of a new logic; Graph logic. Now to implement this person model ☝️, they should handle the bit entity, thus, mimicking logical computers. The model is bound to logical computers.
 
-But, with the following :point_down: person model,
+But, with the following 👇 person model,
 
 ```entity-mapping
 person : name
@@ -54,7 +54,7 @@ name -> string
 string
 ```
 
-They can implement the string entity in their optimized way :white_check_mark:.
+They can implement the string entity in their optimized way ✅.
 
 > String is a good enough abstraction. Too much abstraction would suffer implementations.
 
