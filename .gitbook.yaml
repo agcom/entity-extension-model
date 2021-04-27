@@ -1,0 +1,3 @@
+redirects:
+  entity: ./fundamentals/entity.md
+  mapping: ./fundamentals/mapping.md
