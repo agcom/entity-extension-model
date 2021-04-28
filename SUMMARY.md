@@ -7,9 +7,9 @@
 - [Extensions](extensions/README.md)
   - [Identifier name](extensions/id-name.md)
   - [Notation](extensions/notation.md)
-  - [Super mapping](extensions/super-mapping.md)
   - [Primitive entity](extensions/primitive-entity.md)
-  - [Graph view](extensions/graph.md)
+  - [Super mapping](extensions/super-mapping.md)
   - [Implicit mapping](extensions/implicit-mapping.md)
+  - [Graph view](extensions/graph.md)
 - Examples
   - [Simple](examples/simple.md)
