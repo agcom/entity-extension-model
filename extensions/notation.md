@@ -2,7 +2,7 @@
 
 A **suggested** notation for EM.
 
-It's all just about defining entities and mappings.
+This notation shows how fundamental components, entities and mappings, are defined and related to form a data model. If you're going to use this notation directly, you should write using characters and use [identifier name](id-name.md) extension as well.
 
 > A `<...>` block indicates a replacement/input, and the note inside, describes the replacement type.
 >
