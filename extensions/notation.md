@@ -4,13 +4,13 @@ A **suggested** notation for EM.
 
 This notation shows how fundamental components, entities and mappings, are defined and related to form a data model. If you're going to use this notation directly, you should write using characters and use [identifier name](id-name.md) extension as well.
 
-> A `<...>` block indicates a replacement/input, and the note inside, describes the replacement type.
->
-> A set replacement should be done by writing set members separated using commas. For example,
->
-> - `<set of mappings>`, replaced by `name, mother, father, children`.
+### Replacement block
 
-### Entity
+A `<note>` block indicates a replacement, and the note inside, describes the replacement type.
+
+A set replacement should be done by writing set members separated using commas. For example, `<set of mappings>`, replaced by `name, mother, father, children`.
+
+## Entity
 
 `<entity> : <set of mappings>`
 
@@ -23,7 +23,7 @@ This notation shows how fundamental components, entities and mappings, are defin
 > - `<entity>`
 > - `<entity> :`
 
-### Mapping
+## Mapping
 
 `<mapping> -> <entity>`
 
@@ -31,6 +31,6 @@ This notation shows how fundamental components, entities and mappings, are defin
 
 - `<entity>`: Associated entity.
 
-## Examples
+## Example
 
 Almost all examples in the repository use this extension.
