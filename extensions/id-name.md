@@ -1,8 +1,8 @@
-# Reference name
+# Identifier name
 
-It's suggested to assign a **string** as a name to each entity, each mapping and any other component. Thus, you can reference and identify them by their names.
+It's suggested to assign a **string** as a name to each entity, each mapping and any other component. Thus, you can identify and reference them by their names.
 
-A reference name,
+An identifier name,
 
 - Should be **unique** in its context.
 - Can be anything!

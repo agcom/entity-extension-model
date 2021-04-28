@@ -2,7 +2,7 @@
 
 We'll create a simple data model of a **person**. For every person, we want to save his/her name, parents and children.
 
-To **express** the model, we'll reference each entity/mapping by a name ([reference name](../extensions/reference-name.md)) and use a simple writing notation ([suggested notation](../extensions/notation.md)),
+To **express** the model, we'll reference each entity/mapping by a name ([identifier name](../extensions/id-name.md)) and use a simple writing notation ([suggested notation](../extensions/notation.md)),
 
 > `<   >` blocks indicate replacements.
 

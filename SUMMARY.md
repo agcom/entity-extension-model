@@ -5,7 +5,7 @@
   - [Entity](fundamentals/entity.md)
   - [Mapping](fundamentals/mapping.md)
 - [Extensions](extensions/README.md)
-  - [Reference name](extensions/reference-name.md)
+  - [Identifier name](extensions/id-name.md)
   - [Notation](extensions/notation.md)
   - [Super mapping](extensions/super-mapping.md)
   - [Primitive entity](extensions/primitive-entity.md)

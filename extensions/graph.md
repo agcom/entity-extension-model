@@ -1,6 +1,6 @@
 # Graph view
 
-> Based on the [reference name](reference-name.md) extension.
+> Based on the [identifier name](id-name.md) extension.
 
 In a directed graph,
 

@@ -14,7 +14,7 @@ It's all just about defining entities and mappings.
 
 `<entity> : <set of mappings>`
 
-- `<entity>`: Entity reference.
+- `<entity>`: Entity reference/identifier.
 
 - `<set of mappings>`: Admitted mappings.
 
@@ -27,7 +27,7 @@ It's all just about defining entities and mappings.
 
 `<mapping> -> <entity>`
 
-- `<mapping>`: Mapping reference.
+- `<mapping>`: Mapping reference/identifier.
 
 - `<entity>`: Associated entity.
 

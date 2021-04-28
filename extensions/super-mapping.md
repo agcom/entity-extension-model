@@ -18,7 +18,7 @@ To be used with the [suggested notation](notation.md).
 
 `<super mapping> :> <set of mappings>`
 
-- `<super mapping>`: Super mapping reference.
+- `<super mapping>`: Super mapping reference/identifier.
 - `<set of mappings>`: Applied mappings.
 
 ## Example
