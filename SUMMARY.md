@@ -13,4 +13,5 @@
   - [Graph notation](extensions/graph-notation.md)
 - Examples
   - [A simple example](examples/simple-person.md)
+  - [Person](examples/person.md)
   - [Student, course, teacher](examples/student-course-teacher.md)
