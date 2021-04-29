@@ -10,7 +10,7 @@
   - [Primitive entity](extensions/primitive-entity.md)
   - [Super mapping](extensions/super-mapping.md)
   - [Implicit mapping](extensions/implicit-mapping.md)
-  - [Graph view](extensions/graph.md)
+  - [Graph notation](extensions/graph-notation.md)
 - Examples
   - [Simple](examples/simple.md)
   - [Student, course, teacher](examples/student-course-teacher.md)
