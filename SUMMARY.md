@@ -13,3 +13,4 @@
   - [Graph view](extensions/graph.md)
 - Examples
   - [Simple](examples/simple.md)
+  - [Student, course, teacher](examples/student-course-teacher.md)
