@@ -32,6 +32,7 @@ person : id, name, parents, children
 string -> string
 person -> person
 
+# Of course we're over-using the super mapping in here.
 id :> string
 name :> string
 children :> person
