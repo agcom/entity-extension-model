@@ -36,7 +36,3 @@ A set replacement should be done by writing set members separated using commas. 
 `# <comment>`
 
 - `<comment>`: Anything.
-
-## Example
-
-Almost all examples in the repository use this extension.
