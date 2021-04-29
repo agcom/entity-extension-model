@@ -1,35 +1,19 @@
 # Implicit mapping
 
-With this extension, each entity will have an implicit mapping;
+With this extension, each entity will implicitly introduce a mapping.
 
-For each entity, the implicit mapping
+For each entity, the introduced mapping
 
 - is **identified** among mappings as the entity is identified among entities.
 - does **associates** with the entity.
 
-By an example, using the [text notation](text-notation.md), entity `x` will have the implicit mapping `x`:
+For example, entity `x` will implicitly introduce the mapping `x` which associates with the entity `x`.
 
-```entity-mapping
-x
-y : x
-
-x -> x # Can be omitted cause it's implicitly applied.
-```
-
-### Handy with super mappings
-
-This extension is very handy beside the [super mapping](super-mapping.md) extension.
-
-With this extension, the example in the super mapping document shrinks down to the following 👇.
-
-```entity-mapping
-string
-person : name, parents, children
-
-name :> string
-children :> person
-father :> person
-mother :> person
-parents :> mother, father
-```
-
+> Using the [text notation](text-notation.md):
+>
+> ```entity-mapping
+> x
+> y : x
+> 
+> x -> x # Can be omitted cause it implicitly exists.
+> ```
