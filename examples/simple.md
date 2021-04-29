@@ -2,7 +2,7 @@
 
 We'll create a simple data model of a **person**. For every person, we want to save his/her id, name, parents and children.
 
-To **express** the model, we'll reference each entity/mapping by a name ([identifier name](../extensions/id-name.md)) and use a simple writing notation ([suggested notation](../extensions/notation.md)),
+To express the model, we'll reference each entity/mapping by a **name** and use the following simple writing **notation**:
 
 > `<   >` blocks indicate replacements.
 
@@ -12,12 +12,14 @@ To **express** the model, we'll reference each entity/mapping by a name ([identi
 | Mapping | `<name> -> <associated entity>` |
 | Comment |          `# <comment>`          |
 
-## The example
+> We'll actually use the [identifier name](../extensions/id-name.md), the [text notation](../extensions/notation.md) and the [primitive entity](../extensions/primitive-entity.md) extensions.
+
+## Data model
 
 ```entity-mapping
 person : id, name, mother, father, children
 
-# String is a primitive entity (therefore has no mappings).
+# String is a primitive entity (has no mappings).
 string :
 
 id -> string
@@ -26,5 +28,3 @@ mother -> person
 father -> person
 children -> person
 ```
-
-> Checkout the [primitive entity](../extensions/primitive-entity.md) extension.
