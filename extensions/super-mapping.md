@@ -27,11 +27,12 @@ To be used with the [suggested notation](notation.md).
 
 ```entity-mapping
 string
-person : name, parents, children
+person : id, name, parents, children
 
 string -> string
 person -> person
 
+id :> string
 name :> string
 children :> person
 father :> person
@@ -43,11 +44,12 @@ Let's see a **transpiled** version of the above example,
 
 ```entity-mapping
 string
-person : name.string, parents.mother.person, parents.father.person, children.person
+person : id.string, name.string, parents.mother.person, parents.father.person, children.person
 
 string -> string
 person -> person
 
+id.string -> string
 name.string -> string
 children.person -> person
 father.person -> person

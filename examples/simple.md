@@ -1,6 +1,6 @@
 # A simple example
 
-We'll create a simple data model of a **person**. For every person, we want to save his/her name, parents and children.
+We'll create a simple data model of a **person**. For every person, we want to save his/her id, name, parents and children.
 
 To **express** the model, we'll reference each entity/mapping by a name ([identifier name](../extensions/id-name.md)) and use a simple writing notation ([suggested notation](../extensions/notation.md)),
 
@@ -15,11 +15,12 @@ To **express** the model, we'll reference each entity/mapping by a name ([identi
 ## The example
 
 ```entity-mapping
-person : name, mother, father, children
+person : id, name, mother, father, children
 
 # String is a primitive entity (therefore has no mappings).
 string :
 
+id -> string
 name -> string
 mother -> person
 father -> person
