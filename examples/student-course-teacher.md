@@ -12,7 +12,7 @@ A small learning website. Courses are published and students participate in them
 
 The following 👇 EM data model is a possible outcome, probably the simplest and the most abstract:
 
-> Uses [identifier name](../extensions/id-name.md), [notation](../extensions/notation.md), [primitive entity](../extensions/primitive-entity.md) and [implicit mapping](../extensions/implicit-mapping.md) extensions.
+> Uses [identifier name](../extensions/id-name.md), [text notation](../extensions/text-notation.md), [primitive entity](../extensions/primitive-entity.md) and [implicit mapping](../extensions/implicit-mapping.md) extensions.
 
 ```entity-mapping
 # Primitive entities

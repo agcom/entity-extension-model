@@ -8,7 +8,7 @@ Visually said:
 
 ![Mermaid SVG](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcblx0eCAtLW0tLT5cblx0eSIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
 
-> Equivalent in the text notation:
+> Equivalent in the [text notation](text-notation.md):
 >
 > ```entity-mapping
 > x : m

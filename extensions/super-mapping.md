@@ -12,9 +12,9 @@ When a super mapping applies another super mapping, it applies under the hood ma
 
 When an entity admits to a super mapping, it admits to under the hood mappings.
 
-## Notation
+## Text notation
 
-To be used with the [suggested notation](notation.md).
+To be used with the [text notation](text-notation.md) extension.
 
 `<super mapping> :> <set of mappings>`
 
@@ -23,7 +23,7 @@ To be used with the [suggested notation](notation.md).
 
 ## Example
 
-> Using the [suggested notation](notation.md) extension.
+> Using the [text notation](text-notation.md) extension.
 
 ```entity-mapping
 string

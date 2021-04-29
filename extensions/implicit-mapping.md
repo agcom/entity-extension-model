@@ -7,7 +7,7 @@ For each entity, the implicit mapping
 - is **identified** among mappings as the entity is identified among entities.
 - does **associates** with the entity.
 
-By an example, using the [suggested notation](notation.md), entity `x` will have the implicit mapping `x`:
+By an example, using the [text notation](text-notation.md), entity `x` will have the implicit mapping `x`:
 
 ```entity-mapping
 x

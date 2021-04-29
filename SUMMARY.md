@@ -6,7 +6,7 @@
   - [Mapping](fundamentals/mapping.md)
 - [Extensions](extensions/README.md)
   - [Identifier name](extensions/id-name.md)
-  - [Notation](extensions/notation.md)
+  - [Text notation](extensions/text-notation.md)
   - [Primitive entity](extensions/primitive-entity.md)
   - [Super mapping](extensions/super-mapping.md)
   - [Implicit mapping](extensions/implicit-mapping.md)

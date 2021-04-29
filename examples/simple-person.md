@@ -12,7 +12,7 @@ To express the model, we'll reference each entity/mapping by a **name** and use 
 | Mapping | `<name> -> <associated entity>` |
 | Comment |          `# <comment>`          |
 
-> We'll actually use the [identifier name](../extensions/id-name.md), the [text notation](../extensions/notation.md) and the [primitive entity](../extensions/primitive-entity.md) extensions.
+> We'll actually use the [identifier name](../extensions/id-name.md), the [text notation](../extensions/text-notation.md) and the [primitive entity](../extensions/primitive-entity.md) extensions.
 
 ## Data model
 

@@ -1,6 +1,6 @@
-# Notation
+# Text notation
 
-A **suggested** notation for EM.
+A text-based notation for EM.
 
 This notation shows how fundamental components, entities and mappings, are defined and related to form a data model. If you're going to use this notation directly, you should write using characters and use [identifier name](id-name.md) extension as well.
 
