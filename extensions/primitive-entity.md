@@ -10,7 +10,7 @@ But, **NO**, with this extension. Leaf entities should be handled by **implement
 
 ## Long story
 
-Lets explain with a [simple example](../examples/simple.md),
+Lets explain with a [simple example](../examples/simple-person.md),
 
 ```entity-mapping
 person : name

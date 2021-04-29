@@ -12,5 +12,5 @@
   - [Implicit mapping](extensions/implicit-mapping.md)
   - [Graph notation](extensions/graph-notation.md)
 - Examples
-  - [Simple](examples/simple.md)
+  - [A simple example](examples/simple-person.md)
   - [Student, course, teacher](examples/student-course-teacher.md)

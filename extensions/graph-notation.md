@@ -18,6 +18,6 @@ Visually said:
 
 ## Example
 
-Graph view of the [simple](../examples/simple.md) example:
+Graph view of the [simple](../examples/simple-person.md) example:
 
 ![Mermaid SVG](https://mermaid.ink/svg/eyJjb2RlIjoiZ3JhcGggTFJcblx0c3RyaW5nXG5cdHBlcnNvblxuXHRcbiAgICBwZXJzb24gLS1pZC0tPiBzdHJpbmdcblx0cGVyc29uIC0tbmFtZS0tPiBzdHJpbmdcblx0cGVyc29uIC0tbW90aGVyLS0-IHBlcnNvblxuXHRwZXJzb24gLS1mYXRoZXItLT4gcGVyc29uXG5cdHBlcnNvbiAtLWNoaWxkcmVuLS0-IHBlcnNvbiIsIm1lcm1haWQiOnsidGhlbWUiOiJkZWZhdWx0In0sInVwZGF0ZUVkaXRvciI6ZmFsc2V9)
