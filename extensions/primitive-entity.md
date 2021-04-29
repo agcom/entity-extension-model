@@ -1,16 +1,16 @@
 # Primitive entity
 
-Ever wondered that an entity-mapping data model only consists of some loops which lead to **emptiness**?
+Ever wondered that an EM data model only consists of some loops which lead to **emptiness**?
 
 ## Short story
 
-Well, **YES**. Entities with no mappings (leaf entities) are sources for emptiness.
+Well, **YES**. Entities with no mappings (leaf entities) are sources of emptiness.
 
 But, **NO**, with this extension. Leaf entities should be handled by **implementations**.
 
 ## Long story
 
-Lets explain with a simple example,
+Let's explain using the [text notation](text-notation.md) and a simple example.
 
 ```entity-mapping
 person : name
@@ -44,7 +44,7 @@ bit
 
 It would have been easier and more abstract (in a good way) to say that at the string entity.
 
-Imagine it's 2070 and new computers, instead of digital logic, work on top of a new logic; Graph logic. Now to implement this person model ☝️, they should handle the bit entity, thus, mimicking logical computers. The model is bound to logical computers.
+Imagine it's 2070 and new computers, instead of digital logic, work on top of a new logic; Graph logic. Now to implement this person model ☝️, they should handle the bit entity, thus, mimicking logical computers. The model is bound to digital computers.
 
 But, with the following 👇 person model,
 
