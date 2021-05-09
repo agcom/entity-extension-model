@@ -1,11 +1,11 @@
 # Entity-mapping
 
-Entity-mapping (**EM**) is a cool [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model), which is,
+Entity-mapping (**EM**) is a cool [semantic data model](https://en.wikipedia.org/wiki/Semantic_data_model). Why? Because it defines **loosely coupled** data models.
 
-- *Easy*,
-- *Familiar*,
-- *Extensible*
-- and *Reusable*.
+## Goals
+
+- Reusable and extensible data models.
+- Easy to learn and use.
 
 ## License
 
