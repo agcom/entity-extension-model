@@ -7,7 +7,7 @@
 - [Extensions](extensions/README.md)
   - [Identifier name](extensions/id-name.md)
   - [Text notation](extensions/text-notation.md)
-  - [Primitive entity](extensions/primitive-entity.md)
+  - [Primitive type](extensions/primitive-type.md)
   - [Super mapping](extensions/super-mapping.md)
   - [Implicit mapping](extensions/implicit-mapping.md)
   - [Graph notation](extensions/graph-notation.md)
