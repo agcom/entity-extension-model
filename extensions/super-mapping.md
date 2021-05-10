@@ -23,7 +23,7 @@ When a type admits to a super mapping, it admits to under the hood mappings.
 
 ### Example
 
-```entity-mapping
+```type-mapping
 string
 person : name, parents
 
@@ -36,7 +36,7 @@ parents :> mother, father # A supper mapping.
 
 **A transpiled version** of the above data model 👇:
 
-```entity-mapping
+```type-mapping
 string
 person : name, parents.father, parents.mother
 

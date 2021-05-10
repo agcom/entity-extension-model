@@ -10,7 +10,7 @@ Visually said:
 
 > Equivalent in the [text notation](text-notation.md):
 >
-> ```entity-mapping
+> ```type-mapping
 > x : m
 > m -> y
 > y

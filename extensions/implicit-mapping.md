@@ -11,7 +11,7 @@ For example, type `x` will implicitly introduce the mapping `x` which associates
 
 > Using the [text notation](text-notation.md):
 >
-> ```entity-mapping
+> ```type-mapping
 > x
 > y : x
 > 

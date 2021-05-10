@@ -16,7 +16,7 @@ To express the model, we'll reference each type/mapping by a **name** and use th
 
 ## Data model
 
-```entity-mapping
+```type-mapping
 person : id, name, mother, father, children
 
 # String is a primitive type (has no mappings).

@@ -14,7 +14,7 @@ The following 👇 TM data model is a possible outcome, probably the simplest an
 
 > Uses [identifier name](../extensions/id-name.md), [text notation](../extensions/text-notation.md), [primitive type](../extensions/primitive-type.md) and [implicit mapping](../extensions/implicit-mapping.md) extensions.
 
-```entity-mapping
+```type-mapping
 # Primitive types
 string
 integer
