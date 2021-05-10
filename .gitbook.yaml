@@ -1,3 +1,4 @@
 redirects:
-  entity: ./fundamentals/entity.md
+  entity: ./fundamentals/type.md # For backward compatibility.
   mapping: ./fundamentals/mapping.md
+  type: ./fundamentals/type.md

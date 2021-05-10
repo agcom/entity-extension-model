@@ -2,7 +2,7 @@
 
 - [Introduction](README.md)
 - Fundamentals
-  - [Entity](fundamentals/entity.md)
+  - [Type](fundamentals/type.md)
   - [Mapping](fundamentals/mapping.md)
 - [Extensions](extensions/README.md)
   - [Identifier name](extensions/id-name.md)
