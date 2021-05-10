@@ -7,7 +7,7 @@ For each person, we'll save his/her id, name, gender, birth date, parents and ch
 We'll use all available extensions and express the model using the [text notation](../extensions/text-notation.md).
 
 ```entity-mapping
-# Primitive entities
+# Primitive types
 string
 date
 gender

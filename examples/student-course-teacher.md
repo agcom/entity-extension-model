@@ -10,12 +10,12 @@ A small learning website. Courses are published and students participate in them
 
 ## Data model
 
-The following 👇 EM data model is a possible outcome, probably the simplest and the most abstract:
+The following 👇 TM data model is a possible outcome, probably the simplest and the most abstract:
 
-> Uses [identifier name](../extensions/id-name.md), [text notation](../extensions/text-notation.md), [primitive entity](../extensions/primitive-entity.md) and [implicit mapping](../extensions/implicit-mapping.md) extensions.
+> Uses [identifier name](../extensions/id-name.md), [text notation](../extensions/text-notation.md), [primitive type](../extensions/primitive-type.md) and [implicit mapping](../extensions/implicit-mapping.md) extensions.
 
 ```entity-mapping
-# Primitive entities
+# Primitive types
 string
 integer
 
@@ -39,7 +39,7 @@ teacher : person, course
 
 ### How to find out a student's score in a course?
 
-Note that the student entity and the course entity, **both admit to the score mapping** which associates their instances with instances of the integer entity.
+Note that the student type and the course type, **both admit to the score mapping** which associates their instances with instances of the integer type.
 
 To find out a student's score in a course, we should look at **common instances** of the student's scores and the course's scores.
 
