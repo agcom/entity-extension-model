@@ -6,7 +6,7 @@ To express the model, we'll reference each type/mapping by a **name** and use th
 
 > `<   >` blocks indicate replacements.
 
-|  Type   |            Notation            |
+|  What   |            Notation            |
 | :-----: | :----------------------------: |
 |  Type   | `<name> : <admitted mappings>` |
 | Mapping | `<name> -> <associated type>`  |
