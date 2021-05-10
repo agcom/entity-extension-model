@@ -17,7 +17,7 @@ Each specific person is called an instance.
 
 A specific example of a type is called an instance of that type. More formally, a thing with its variant properties is an instance of its type.
 
-For example, me, Alireza Ghasemi is an instance of the person type.
+For example, Alireza Ghasemi is an instance of the person type.
 
 As expected, a type can have multiple instances.
 
