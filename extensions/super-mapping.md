@@ -15,11 +15,11 @@ Defining a supper mapping in the [text notation](text-notation.md) extension:
 
 We'll show how super mappings can transpile down to the **fundamentals**, hence proving that they won't introduce any **conflicts**.
 
-When defining a super mapping, **under the hood**, for each applied mapping a new unique mapping with the same associated entity will be created.
+When defining a super mapping, **under the hood**, for each applied mapping a new unique mapping with the same associated type will be created.
 
 When a super mapping applies another super mapping, it applies under the hood mappings.
 
-When an entity admits to a super mapping, it admits to under the hood mappings.
+When a type admits to a super mapping, it admits to under the hood mappings.
 
 ### Example
 
