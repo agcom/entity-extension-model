@@ -44,7 +44,7 @@ bit
 
 It would have been easier and more abstract (in a good way) to say that at the string type.
 
-Imagine it's 2070 and new computers, instead of digital logic, work on top of a new logic; Graph logic. Now to implement this person model ☝️, they should handle the bit type, thus, mimicking logical computers. The model is bound to digital computers.
+Imagine it's 2070 and new computers, instead of digital logic, work on top of a new logic; Graph logic. Now to implement this person model ☝️, they should handle the bit type, thus, mimicking digital computers. The model is bound to digital computers.
 
 But, with the following 👇 person model,
 
