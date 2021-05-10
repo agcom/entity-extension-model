@@ -1,6 +1,6 @@
 # Identifier name
 
-It's suggested to assign a **string** as a name to each entity, each mapping and any other component. Thus, you can identify and reference them by their names.
+It's suggested to assign a **string** as a name to each type, each mapping and any other component. Thus, you can identify and reference them by their names.
 
 An identifier name,
 
@@ -11,9 +11,9 @@ An identifier name,
 
 ## Examples
 
-- *Person* entity
+- *Person* type
 - *Person* mapping
-- *String* entity
+- *String* type
 - *Name* mapping
 - *Children* mapping
 - *Parents* super mapping

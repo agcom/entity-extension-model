@@ -1,17 +1,17 @@
 # Implicit mapping
 
-With this extension, each entity will implicitly introduce a mapping.
+With this extension, each type will implicitly introduce a mapping.
 
-For each entity, the introduced mapping
+For each type, the introduced mapping
 
-- is **identified** among mappings as the entity is identified among entities.
-- does **associates** with the entity.
+- is **identified** among mappings as the type is identified among types.
+- does **associates** with the type.
 
-For example, entity `x` will implicitly introduce the mapping `x` which associates with the entity `x`.
+For example, type `x` will implicitly introduce the mapping `x` which associates with the type `x`.
 
 > Using the [text notation](text-notation.md):
 >
-> ```entity-mapping
+> ```type-mapping
 > x
 > y : x
 > 
