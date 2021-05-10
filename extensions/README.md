@@ -1,5 +1,5 @@
 # Extensions
 
-On top of EM.
+On top of TM.
 
 Extensions should be compatible with the fundamentals.
